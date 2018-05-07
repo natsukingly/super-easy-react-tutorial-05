@@ -1,16 +1,20 @@
 
-// 外部のライブラリやファイルを参照するインポートの部分
 import React from 'react';
 
+const Title = (props) => {
 
-// JSXやメソッドを定義する実質上の中身
-const Title = () => {
   return(
-    <div>
-      <h2>Hello World 2.0</h2>
+    <div className="titleSection">
+      <h2
+        style={props.titleStyle}
+        id="versionStatement"
+      >{props.children}</h2>
+      <p
+        onClick={props.onClick}
+        id="upgradeButton"
+      >Upgrade</p>
     </div>
   )
 }
 
-// 外部のファイルがこのcomponentを利用できるようにするエクスポートの部分
 export default Title;
