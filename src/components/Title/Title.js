@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './Title.css';
 
 const Title = (props) => {
 
@@ -12,6 +13,7 @@ const Title = (props) => {
       <p
         onClick={props.onClick}
         id="upgradeButton"
+        className="upgrade-button"
       >Upgrade</p>
     </div>
   )
